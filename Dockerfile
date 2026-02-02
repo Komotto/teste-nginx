@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  default.conf: |
+    server {
+      listen 8080;
+
+      location / {
+        return 302 https://www.exemplo.com;
+      }
+    }
