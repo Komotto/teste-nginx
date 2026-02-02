@@ -1,0 +1,13 @@
+resources:
+  - ../../base
+
+nameSuffix: -dev
+
+replicas:
+  - name: myapp
+    count: 1
+
+images:
+  - name: nginx
+    newTag: latest
+
